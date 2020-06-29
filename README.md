@@ -113,7 +113,18 @@ docker push 172.30.1.1:5000/myproject/nginx-nexxera
 
 oc new-app 172.30.1.1:5000/myproject/nginx-nexxera
 
+6 - Testando container:
 
+$ curl localhost:8081
+{
+   "service":{
+      "oracle":"ok",
+      "redis":"ok",
+      "mongo":"down",
+      "pgsql":"down",
+      "mysql":"ok"
+   }
+}$
 
 
 
